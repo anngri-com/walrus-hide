@@ -10,3 +10,18 @@
 .clickable:hover {
   text-decoration: underline;
 }
+
+.black-background {
+  background-color: black;
+  color: white;
+}
+
+.yellow-background {
+  background-color: yellow;
+  color: black;
+}
+
+.red-background {
+  background-color: red;
+  color: black;
+}
