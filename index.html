@@ -8,6 +8,8 @@
     <title>Peek-a-boo</title>
   </head>
   <body>
+
+<!-- First container starts here -->
   <div class="container">
     <h1>Peek-a-boo</h1>
       <p><strong>Peek-a-boo</strong> is an ancient game riddled in mystery and deceit. Though it appears to be an innocent children's pastime, you may change your mind when you learn of its treacherous history.</p>
@@ -19,6 +21,7 @@
     <div id="walrus-showing">
       <img src="https://www.hakaimagazine.com/wp-content/uploads/walrus-banner.jpg" style="width:500px;height:300px;">
     </div>
+    <br>
     <div class="container-button">
       <h1>Let's play with colors!</h1>
       <p>Click a button to choose what color you'd like this page to be:</p>
@@ -28,4 +31,31 @@
       <button class="btn btn-danger" id="red">Red</button>
     </div>
   </div>
+
+  <!-- Second container stars here -->
+  <br><br>
+  <div class="container">
+      <h1>Talk to the web page</h1>
+      <p>Click a button to say something to the web page. See what it says back!</p>
+
+      <button class="btn btn-primary" id="hello">Say "hello"</button>
+      <button class="btn btn-dark" id="goodbye">Say "goodbye"</button>
+      <button class="btn btn-danger" id="stop">Say "stop copying me!"</button>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>You said:</h2>
+          <ul class="unstyled" id="user">
+
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <h2>The web page said back:</h2>
+          <ul class="unstyled" id="web">
+
+          </ul>
+        </div>
+      </div>
+    </div>
 </body>

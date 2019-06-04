@@ -6,7 +6,7 @@ $(document).ready(function() {
     $("#walrus-showing").fadeOut(3000);
   });
 
-/* Button function starts here */
+// Second lesson starts here
 
   $("button#black").click(function() {
     $("body").removeClass();
@@ -24,4 +24,33 @@ $(document).ready(function() {
     $("body").removeClass();
     $("body").addClass("red-background");
   });
+
+  // Third lesson starts here
+
+  $("button#hello").click(function(){
+    $("ul#user").prepend("<li>Hello there</li>");
+    $("ul#web").prepend("<li>Why, Hello my friend!</li>");
+
+    $("ul#user").children("li").first().click(function(){
+      alert("Hello Friend!");
+      $(this).remove();
+    });
+
+    $("ul#web").children("li").first().click(function(){
+      alert("Hello! Hello!");
+      $(this).remove();
+    });
+  });
+
+
+  $("button#goodbye").click(function(){
+    $("ul#user").prepend("<li>Goodbye firend</li>");
+    $("ul#web").prepend("<li>Bye bye dear friend!</li>");
+  });
+
+  $("button#stop").click(function(){
+    $("ul#user").prepend("<li>Stop! Just, stop!</li>");
+    $("ul#web").prepend("<li>I stoped, promise! :)</li>");
+  });
+
 });
